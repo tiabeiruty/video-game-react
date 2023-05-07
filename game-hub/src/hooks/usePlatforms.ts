@@ -1,7 +1,7 @@
 import { useQuery } from "@tanstack/react-query";
 import platforms from "../data/platforms";
 import apiClient from "../services/api-client";
-import { FetchResponse } from "./useData";
+import { FetchResponse } from "../services/api-client";
 import { Platform } from "./useGames";
 
 const usePlatforms = () => useQuery({
@@ -12,4 +12,4 @@ const usePlatforms = () => useQuery({
     initialData: { count: platforms.length, results: platforms },
 })
 
-
+export default usePlatforms;
