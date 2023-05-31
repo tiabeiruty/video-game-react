@@ -3,7 +3,7 @@ import { GameQuery } from "../App";
 import APIClient from "../services/api-client";
 import { FetchResponse } from '../services/api-client'
 import { Platform } from "./usePlatforms";
-
+//test commit!
 const apiClient = new APIClient<Game>('/games')
 export interface Game {
   id: number;
